@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url('https://cdn.vox-cdn.com/thumbor/JgNyGimutNutR9o8kq9pr_WxAgQ=/0x0:2000x1335/1200x675/filters:focal(840x508:1160x828)/cdn.vox-cdn.com/uploads/chorus_image/image/61623387/2018_09_28_GoldLineBar_003.0.jpg');
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11,6 +11,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-top: 0;
+  width: 100%;
+  object-fit: scale-down;
 }
 
 .drink {
@@ -43,3 +46,18 @@ h2 {
   margin: 1%;
 }
 
+button {
+  width: 150px;
+  padding: 1%;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+.drinklist {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.how {
+  text-decoration: underline;
+}

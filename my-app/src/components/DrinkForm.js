@@ -15,7 +15,7 @@ const DrinkForm = props => {
         {props.isFetchingData ? (
             <div>Making your drink...</div>
         ) : (
-            <button onClick={handleGetData}>Surprise Me</button>
+            <button onClick={handleGetData}>Surprise Me!</button>
         )}
         </>
     );

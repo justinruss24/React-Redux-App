@@ -12,8 +12,8 @@ const Drinks = props => {
                         <div className="drink">
                             <img src={drinks.strDrinkThumb} alt={drinks.strDrink} />
                             <h2>{drinks.strDrink}</h2>
-                            <h4>Base Liquor: {drinks.strIngredient1}</h4>
-                            <p>How it's Made: {drinks.strInstructions}</p>
+                            <h4><span className="how">Base Liquor</span>: {drinks.strIngredient1}</h4>
+                            <p><span className="how">How it's Made</span>: {drinks.strInstructions}</p>
                         </div>)
             )}
         </>
