@@ -11,19 +11,23 @@ const DrinkForm = props => {
     };
 
     return (
-        <>
-        {props.isFetchingData ? (
-            <div>Making your drink...</div>
-        ) : (
-            <button onClick={handleGetData}>Surprise Me!</button>
-        )}
-        </>
+            <div>
+                {props.isFetchingData ? (
+                    <div>Making your drink...</div>
+                ) : (
+                    <div>
+                        <p>Drink Count: {props.count} </p>
+                        <button onClick={handleGetData}>Surprise Me!</button>
+                    </div>
+                    )}
+            </div>
     );
 };
 
 const mapStateToProps = state => {
     return {
-        isFetchingData: state.isFetchingData
+        isFetchingData: state.isFetchingData,
+        count: state.count
     };
 };
 
